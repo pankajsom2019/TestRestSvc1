@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="6fa67823-7e0a-45e6-9db4-63e8521927ef" basePath="/rest" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="testrestsvc1Flow" doc:id="79466d92-1682-4dad-8dd9-accd77001bf1" >
+		<http:listener doc:name="Listener" doc:id="82e35072-2df9-4cbb-8906-94b47fa81b21" config-ref="HTTP_Listener_config" path="/{name}"/>
+		<logger level="INFO" doc:name="Logger" doc:id="70518b59-faf5-46b8-a03a-161b2d849b22" message="#[attributes.uriParams.name]"/>
+	</flow>
+</mule>
