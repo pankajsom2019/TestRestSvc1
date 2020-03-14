@@ -26,6 +26,15 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+				<cloudHubDeployment>
+					<username>pankajhtmail</username>
+					<password>Ibm@1234</password>
+					<environment>Sandbox</environment>
+					<worker>1</worker>
+					<workerType>Micro</workerType>
+					<applicationName>RestWS-Svc</applicationName>
+					<versionName>4.1.4</versionName>
+				</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
