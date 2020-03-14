@@ -33,7 +33,7 @@
 					<workers>1</workers>
 					<workerType>Micro</workerType>
 					<applicationName>RestWS-Svc</applicationName>
-					<versionName>4.1.4</versionName>
+					<muleVersion>4.1.4</muleVersion>
 				</cloudHubDeployment>
 				</configuration>
 			</plugin>
