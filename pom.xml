@@ -27,13 +27,13 @@
 				<extensions>true</extensions>
 				<configuration>
 				<cloudHubDeployment>
-					<username>pankajhotmail</username>
+					<username>pankajibm2020</username>
 					<password>Ibm@1234</password>
 					<environment>Sandbox</environment>
 					<workers>1</workers>
 					<workerType>Micro</workerType>
 					<applicationName>RestWS-Svc</applicationName>
-					<muleVersion>4.1.4</muleVersion>
+					<muleVersion>4.2.0</muleVersion>
 				</cloudHubDeployment>
 				</configuration>
 			</plugin>
