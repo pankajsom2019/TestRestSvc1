@@ -27,7 +27,7 @@
 				<extensions>true</extensions>
 				<configuration>
 				<cloudHubDeployment>
-					<username>pankajhtmail</username>
+					<username>pankajhotmail</username>
 					<password>Ibm@1234</password>
 					<environment>Sandbox</environment>
 					<workers>1</workers>
